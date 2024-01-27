@@ -1,0 +1,27 @@
+.header {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url("../Images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+.headerTitle {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid black;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .headerTitle {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

@@ -1,0 +1,57 @@
+.addNewPackH2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000;
+    margin: 3%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.addNewPackCreator {
+    display: flex;
+    justify-content: center;
+}
+.addNewPackCreatorInput {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.addNewPackPackType {
+    display: flex;
+    justify-content: center;
+}
+.addNewPackPackTypeInput {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.addNewPackPackName {
+    display: flex;
+    justify-content: center;
+}
+.addNewPackPackNameInput {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.addNewPackPackImage {
+    display: flex;
+    justify-content: center;
+}
+.addNewPackPackImageInput {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5%;
+    padding: 0;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
