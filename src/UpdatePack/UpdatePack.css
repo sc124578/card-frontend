@@ -1,0 +1,56 @@
+.updatePack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.updatePackH2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.updateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.creatorInput {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.packNameInput {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.packTypeInput {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.packImageURLInput {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+

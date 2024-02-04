@@ -10,3 +10,47 @@
     margin-bottom: 1rem;
     text-align: center;
 }
+.listedCardsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    margin-top: 7%;
+    text-align: center;
+}
+.cardImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+     transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+.cardImage.clicked {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  .backHome {
+    display: flex;
+    justify-content: left;
+    margin: 3%;
+  }
+.cardSearch {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+.cardSearchBar {
+    text-align: center;
+}
+.sortBy {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+
+}
+@media screen and (max-width: 768px) {
+    .listedCardsList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

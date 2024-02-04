@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import CreatePack from "./CreatePack/CreatePack";
 import CardList from "./CardList/CardList";
 import AddToPack from "./AddToPack/AddToPack";
+import UpdatePack from "./UpdatePack/UpdatePack";
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/create-pack" element={<CreatePack />} />
       <Route path="/pack/:packId" element={<CardList />} />
-      <Route path="/add-to-pack" element={<AddToPack />} />
+      <Route path="/pack/:packId/add-to-pack" element={<AddToPack />} />
+      <Route path="/update-pack/:packId" element={<UpdatePack />} />
       </Routes>
     </Router>
   </div>

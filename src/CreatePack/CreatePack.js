@@ -26,7 +26,7 @@ export default function CreatePack() {
     const submitCard = (event) => {
         event.preventDefault()
         setLoading(true)
-        api.post("api/packs", formState)
+        api.post("api/pack", formState)
         .then((response) => {
             setFormState({
                 creator: "",
