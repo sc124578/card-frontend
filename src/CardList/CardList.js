@@ -8,6 +8,8 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function CardList() {
   const [cards, setCards] = useState([]);
+  const [totalCards, setTotalCards] = useState([]);
+  const [clickedCards, setClickedCards] = useState([]);
   const [search, setSearch] = useState("");
   const [sortCriteria, setSortCriteria] = useState("cardNumber");
   const [sortOrder, setSortOrder] = useState("asc");
@@ -24,6 +26,8 @@ export default function CardList() {
     api.get(`api/pack/${packId}`)
       .then((response) => {
         const sortedCards = sortCards(response.data);
+        setTotalCards(response.data.length);
+        setClickedCards(response.data.filter(card => card.isClicked === 1).length);
         setCards(sortedCards);
         console.log(`API Response for pack ${packId}:`, response.data)
       })
@@ -162,6 +166,7 @@ export default function CardList() {
       </div>
       <div className="listedCards">
         <h2 className="listedCardsH2">Listed Cards</h2>
+          <h3 className="totalCards">{`${clickedCards} of ${totalCards} collected!`}</h3>
         <div className="listedCardsList">
           {filteredCards.map((card, index) => (
             <div key={index} className="listedCard">

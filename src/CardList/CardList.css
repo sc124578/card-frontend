@@ -47,6 +47,13 @@
     margin: 3%;
 
 }
+.totalCards {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
 @media screen and (max-width: 768px) {
     .listedCardsList {
         display: flex;
