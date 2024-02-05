@@ -15,7 +15,7 @@ export default function AddToPack() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const api = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://card-backend-9fdv.onrender.com",
   });
 
   const submitCard = (event) => {

@@ -8,7 +8,7 @@ export default function Home() {
     const [search, setsearch] = useState("")
     const [packs, setPacks] = useState([])
     const api = axios.create({
-        baseURL: "http://localhost:8080",
+        baseURL: "https://card-backend-9fdv.onrender.com",
     })
 
     useEffect(() => {

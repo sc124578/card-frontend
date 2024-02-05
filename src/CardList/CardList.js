@@ -15,7 +15,7 @@ export default function CardList() {
   const [sortOrder, setSortOrder] = useState("asc");
   const { packId } = useParams();
   const api = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://card-backend-9fdv.onrender.com",
   });
 
   useEffect(() => {

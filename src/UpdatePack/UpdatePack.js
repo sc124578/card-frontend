@@ -16,7 +16,7 @@ export default function UpdatePack() {
     const { packId } = useParams();
     const [loading, setLoading] = useState(false);
     const api = axios.create({
-        baseURL: "http://localhost:8080",
+        baseURL: "https://card-backend-9fdv.onrender.com",
     });
 
     const submitUpdate = (event) => {

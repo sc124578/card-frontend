@@ -20,7 +20,7 @@ export default function CreatePack() {
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const api = axios.create({
-        baseURL: "http://localhost:8080",
+        baseURL: "https://card-backend-9fdv.onrender.com",
     });
     
     const submitCard = (event) => {
