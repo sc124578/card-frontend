@@ -60,4 +60,9 @@
         flex-direction: column;
         align-items: center;
     }
+    #deleteButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
