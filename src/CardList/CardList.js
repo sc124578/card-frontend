@@ -172,7 +172,7 @@ export default function CardList() {
             <div key={index} className="listedCard">
               <h3 className="cardName">{card.cardName}</h3>
               <ClickableImage imageUrl={card.cardImageURL} card={card} />
-              <button className="btn btn-danger" onClick={() => handleDelete(card.id)}>Delete Card</button>
+              <button id="deleteButton" className="btn btn-danger" onClick={() => handleDelete(card.id)}>Delete Card</button>
             </div>
           ))}
         </div>
